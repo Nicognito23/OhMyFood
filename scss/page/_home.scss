@@ -1,0 +1,23 @@
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #F5F5F5;
+  box-shadow: 
+    0 -1px 3px rgba(0, 0, 0, 0.68);
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-family: $font-text;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: #7E7E7E;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-family: $font-text;
+  font-weight: 300;
+}
