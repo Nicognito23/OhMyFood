@@ -1,0 +1,16 @@
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: $color-grey-light;
+  padding: 15px 0;
+  font-weight: 400;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.48),
+    0 -1px 3px rgba(0, 0, 0, 0.28);
+}
+
+.location i {
+  color: $color-black;
+}
