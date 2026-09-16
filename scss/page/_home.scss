@@ -85,3 +85,16 @@
   font-size: 13px;
   font-weight: 700;
 }
+
+.restaurants {
+  padding: 50px 20px;
+  margin-top: 25px;
+  background-color: $color-grey-light;
+}
+
+.restaurants h2 {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}

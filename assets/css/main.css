@@ -143,6 +143,19 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+.restaurants {
+  padding: 50px 20px;
+  margin-top: 25px;
+  background-color: #EAEAEA;
+}
+
+.restaurants h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
 .location {
   display: flex;
   align-items: center;
@@ -170,4 +183,78 @@ h1, h2, h3 {
   font-size: 17px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.restaurant-card {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.restaurant-card__image-wrapper {
+  position: relative;
+}
+
+.restaurant-card__image-wrapper img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.restaurant-card--enchantee .restaurant-card__image-wrapper img {
+  -o-object-position: 30% 63%;
+     object-position: 30% 63%;
+}
+
+.restaurant-card__badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 0;
+}
+
+.restaurant-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.restaurant-card__content h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.restaurant-card__content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #7E7E7E;
+}
+
+.restaurant-card__content i {
+  font-size: 20px;
+  color: #000000;
+  position: relative;
+  top: -5px;
+}
+
+.restaurant-card__content .restaurant-card__like--active {
+  background: linear-gradient(135deg, #FF79DA 0%, #9356DC 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
