@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
   padding: 40px 20px;
-  background-color: #F5F5F5;
+  background-color: $color-white;
   box-shadow: 
     0 -1px 3px rgba(0, 0, 0, 0.68);
 }
@@ -15,9 +15,73 @@
 }
 
 .hero p {
-  color: #7E7E7E;
+  color: $color-grey-medium;
   margin-bottom: 30px;
   font-size: 19px;
   font-family: $font-text;
   font-weight: 300;
+}
+
+.how-it-works {
+  padding: 40px 20px;
+}
+
+.how-it-works h2 {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.how-it-works__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.how-it-works__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: $color-grey-light;
+  border-radius: 15px;
+  padding: 20px 20px 20px 35px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works__item i {
+  color: $color-grey-medium;
+  font-size: 17px;
+  width: 20px;
+  text-align: center;
+}
+
+.how-it-works__item:nth-child(3) i {
+  color: $color-primary;
+}
+
+.how-it-works__item p {
+  font-family: $font-text;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.how-it-works__number {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
 }

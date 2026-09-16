@@ -59,7 +59,7 @@ h1, h2, h3 {
 .hero {
   text-align: center;
   padding: 40px 20px;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.68);
 }
 
@@ -79,6 +79,70 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+.how-it-works {
+  padding: 40px 20px;
+}
+
+.how-it-works h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.how-it-works__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.how-it-works__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #EAEAEA;
+  border-radius: 15px;
+  padding: 20px 20px 20px 35px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works__item i {
+  color: #7E7E7E;
+  font-size: 17px;
+  width: 20px;
+  text-align: center;
+}
+
+.how-it-works__item:nth-child(3) i {
+  color: #9356DC;
+}
+
+.how-it-works__item p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.how-it-works__number {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .location {
   display: flex;
   align-items: center;
@@ -96,7 +160,7 @@ h1, h2, h3 {
 
 .btn-primary {
   width: 238px;
-  height: 55px;
+  height: 50px;
   border-radius: 30px;
   border: none;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 60%);
