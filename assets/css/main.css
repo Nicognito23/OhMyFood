@@ -56,6 +56,43 @@ h1, h2, h3 {
   width: 200px;
 }
 
+.footer {
+  background-color: #353535;
+  padding: 30px 20px;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footer__list li {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer__list li:nth-child(1),
+.footer__list li:nth-child(2) {
+  font-weight: 500;
+}
+
+.footer__list li:nth-child(2) i {
+  display: inline-block;
+  transform: rotate(-35deg);
+}
+
+.footer__list i {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
 .hero {
   text-align: center;
   padding: 40px 20px;

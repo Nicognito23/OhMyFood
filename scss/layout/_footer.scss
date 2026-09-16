@@ -1,0 +1,37 @@
+.footer {
+  background-color: $color-grey-dark;
+  padding: 30px 20px;
+}
+
+.footer__logo {
+  font-family: $font-title;
+  font-weight: 400;
+  color: $color-white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footer__list li {
+  color: $color-white;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer__list li:nth-child(1),
+.footer__list li:nth-child(2) {
+  font-weight: 500;
+}
+
+.footer__list li:nth-child(2) i {
+  display: inline-block;
+  transform: rotate(-35deg);
+}
+
+.footer__list i {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
