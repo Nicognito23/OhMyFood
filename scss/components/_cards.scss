@@ -57,15 +57,36 @@
 
 .restaurant-card__content i {
   font-size: 20px;
-  color: $color-black;
+}
+
+.like-btn {
   position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   top: -5px;
 }
 
-.restaurant-card__content .restaurant-card__like--active {
+.like-btn__outline,
+.like-btn__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.like-btn__outline {
+  color: $color-black;
+}
+
+.like-btn__fill {
   background: linear-gradient(135deg, $color-secondary 0%, $color-primary 60%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
+.like-btn:hover .like-btn__fill {
+  opacity: 1;
+}
