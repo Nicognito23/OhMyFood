@@ -46,6 +46,28 @@ h1, h2, h3 {
   font-family: "Shrikhand", cursive;
 }
 
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -223,6 +245,22 @@ h1, h2, h3 {
 
 .like-btn__checkbox:checked + .like-btn .like-btn__fill {
   opacity: 1;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: hide-loader 2.5s forwards;
+}
+
+.loader__logo {
+  width: 180px;
+  animation: pulse 1.2s ease-in-out infinite;
 }
 
 .hero {

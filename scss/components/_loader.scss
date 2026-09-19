@@ -1,0 +1,15 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: hide-loader 2.5s forwards;
+}
+
+.loader__logo {
+  width: 180px;
+  animation: pulse 1.2s ease-in-out infinite;
+}
