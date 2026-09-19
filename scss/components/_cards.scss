@@ -55,8 +55,8 @@
   color: $color-grey-medium;
 }
 
-.restaurant-card__content i {
-  font-size: 20px;
+.like-btn__checkbox {
+  display: none;
 }
 
 .like-btn {
@@ -65,6 +65,7 @@
   width: 20px;
   height: 20px;
   top: -5px;
+  cursor: pointer;
 }
 
 .like-btn__outline,
@@ -72,6 +73,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 20px;
 }
 
 .like-btn__outline {
@@ -87,6 +89,6 @@
   transition: opacity 0.4s ease;
 }
 
-.like-btn:hover .like-btn__fill {
+.like-btn__checkbox:checked + .like-btn .like-btn__fill {
   opacity: 1;
 }
