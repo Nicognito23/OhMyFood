@@ -26,8 +26,7 @@
   padding: 40px 20px;
 
   @include desktop {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 180px;
   }
 }
 
@@ -103,6 +102,13 @@
   padding: 50px 20px;
   margin-top: 25px;
   background-color: $color-grey-light;
+
+  @include desktop {
+    padding: 50px 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
 }
 
 .restaurants h2 {
@@ -110,4 +116,8 @@
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
+
+  @include desktop {
+    grid-column: 1 / -1;
+  }
 }

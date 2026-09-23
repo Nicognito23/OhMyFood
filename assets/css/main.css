@@ -175,6 +175,12 @@ h1, h2, h3 {
   -o-object-position: 30% 63%;
      object-position: 30% 63%;
 }
+@media (min-width: 1024px) {
+  .restaurant-card--enchantee .restaurant-card__image-wrapper img {
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+  }
+}
 
 .restaurant-card__badge {
   position: absolute;
@@ -291,8 +297,7 @@ h1, h2, h3 {
 }
 @media (min-width: 1024px) {
   .how-it-works {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 180px;
   }
 }
 
@@ -371,10 +376,23 @@ h1, h2, h3 {
   margin-top: 25px;
   background-color: #EAEAEA;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 50px 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
 
 .restaurants h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants h2 {
+    grid-column: 1/-1;
+  }
 }

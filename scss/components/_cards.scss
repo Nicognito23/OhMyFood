@@ -20,6 +20,10 @@
 
 .restaurant-card--enchantee .restaurant-card__image-wrapper img {
   object-position: 30% 63%;
+
+  @include desktop {
+    object-position: 50% 50%;
+  }
 }
 
 .restaurant-card__badge {
