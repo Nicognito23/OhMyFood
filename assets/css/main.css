@@ -289,6 +289,12 @@ h1, h2, h3 {
 .how-it-works {
   padding: 40px 20px;
 }
+@media (min-width: 1024px) {
+  .how-it-works {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
 .how-it-works h2 {
   font-family: "Roboto", sans-serif;
@@ -302,6 +308,11 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 25px;
 }
+@media (min-width: 1024px) {
+  .how-it-works__list {
+    flex-direction: row;
+  }
+}
 
 .how-it-works__item {
   position: relative;
@@ -312,6 +323,11 @@ h1, h2, h3 {
   border-radius: 15px;
   padding: 20px 20px 20px 35px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1024px) {
+  .how-it-works__item {
+    flex: 1;
+  }
 }
 
 .how-it-works__item i {
@@ -328,7 +344,7 @@ h1, h2, h3 {
 .how-it-works__item p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   top: 2px;
 }

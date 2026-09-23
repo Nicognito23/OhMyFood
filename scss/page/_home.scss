@@ -24,6 +24,11 @@
 
 .how-it-works {
   padding: 40px 20px;
+
+  @include desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .how-it-works h2 {
@@ -37,6 +42,10 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .how-it-works__item {
@@ -48,6 +57,10 @@
   border-radius: 15px;
   padding: 20px 20px 20px 35px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  @include desktop {
+    flex: 1;
+  }
 }
 
 .how-it-works__item i {
@@ -64,7 +77,7 @@
 .how-it-works__item p {
   font-family: $font-text;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   top: 2px;
 }
