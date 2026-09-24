@@ -3,3 +3,22 @@
   height: 250px;
   object-fit: cover;
 }
+
+.menu {
+  position: relative;
+  background-color: $color-grey-light;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+  padding: 25px 20px 40px;
+}
+
+.menu__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.menu__title h1 {
+  font-size: 28px;
+}
