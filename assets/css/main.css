@@ -469,3 +469,69 @@ h1, h2, h3 {
 .menu__title h1 {
   font-size: 28px;
 }
+
+.menu__group {
+  margin-bottom: 30px;
+}
+
+.menu__group h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+
+.menu__group h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #99E2D0;
+  margin-top: 8px;
+}
+
+.dish-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dish-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-item__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dish-item__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #7E7E7E;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dish-item__price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
