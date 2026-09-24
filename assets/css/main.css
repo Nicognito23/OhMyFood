@@ -191,6 +191,11 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.menu .btn-primary {
+  display: block;
+  margin: 30px auto 0;
+}
+
 .btn-primary:hover {
   filter: brightness(1.1);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
