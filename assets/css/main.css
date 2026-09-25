@@ -68,6 +68,16 @@ h1, h2, h3 {
     transform: scale(1.08);
   }
 }
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -525,6 +535,20 @@ h1, h2, h3 {
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fade-in-up 0.8s ease forwards;
+}
+
+.dish-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.dish-item:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.dish-item:nth-child(3) {
+  animation-delay: 0.8s;
 }
 
 .dish-item__name {
