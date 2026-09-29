@@ -288,12 +288,17 @@ h1, h2, h3 {
 }
 
 .like-btn {
-  position: absolute;
-  right: 15px;
-  bottom: 20px;
+  position: relative;
+  display: inline-block;
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.restaurant-card .like-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
 }
 
 .like-btn__outline,
@@ -534,6 +539,7 @@ h1, h2, h3 {
 }
 
 .dish-item {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -555,6 +561,10 @@ h1, h2, h3 {
 
 .dish-item:nth-child(3) {
   animation-delay: 0.8s;
+}
+
+.dish-item__info {
+  min-width: 0;
 }
 
 .dish-item__name {
@@ -583,4 +593,40 @@ h1, h2, h3 {
   font-size: 16px;
   margin-left: 15px;
   flex-shrink: 0;
+  transition: margin-right 0.3s ease;
+}
+
+.dish-item:hover .dish-item__price {
+  margin-right: 50px;
+}
+
+.dish-item__check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transition: width 0.3s ease;
+}
+
+.dish-item__check i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #008766;
+  font-size: 13px;
+}
+
+.dish-item:hover .dish-item__check {
+  width: 50px;
 }
