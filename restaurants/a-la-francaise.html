@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="À la française - Menu du restaurant à Cité Rouge, Paris.">
+  <title>À la française - OhMyFood</title>
+  <link rel="icon" href="../assets/img/images/logo/ohmyfood@2x.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="header header--menu">
+  <a href="../index.html" class="header__back" aria-label="Retour page d'accueil"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+  <img src="../assets/img/images/logo/ohmyfood@2x.svg" alt="ohmyfood" class="header__logo">
+</header>
+
+<main> 
+    <div class="menu-hero">
+        <img src="../assets/img/images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
+    </div>
+
+    <section class="menu">
+
+    <div class="menu__title">
+        <h1>À la française</h1>
+        <input type="checkbox" id="like-menu" class="like-btn__checkbox">
+        <label for="like-menu" class="like-btn">
+            <i class="fa-regular fa-heart like-btn__outline"></i>
+            <i class="fa-solid fa-heart like-btn__fill"></i>
+        </label>
+    </div>
+
+    <div class="menu__group">
+        <h2>Entrées</h2>
+        <ul class="dish-list">
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Tartare de poulpe acidulé</p>
+                    <p class="dish-item__description">Aux zestes d'orange</p>
+                </div>
+                <span class="dish-item__price">25€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Velouté de légumes d'antan</p>
+                    <p class="dish-item__description">Carotte, panais, topinambour</p>
+                </div>
+                <span class="dish-item__price">35€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">/Soupe à l'oignon</p>
+                    <p class="dish-item__description">Revisitée</p>
+                </div>
+                <span class="dish-item__price">20€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu__group">
+        <h2>Plats</h2>
+        <ul class="dish-list">
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Coquilles Saint-Jacques</p>
+                    <p class="dish-item__description">EAccompagnées d'une purée de panais</p>
+                </div>
+                <span class="dish-item__price">40€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Magret de canard</p>
+                    <p class="dish-item__description">Et parmentier de pommes de terre</p>
+                </div>
+                <span class="dish-item__price">35€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Pigeonneau d’Ille-et-Vilaine</p>
+                    <p class="dish-item__description">Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <span class="dish-item__price">44€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu__group">
+        <h2>Desserts</h2>
+        <ul class="dish-list">
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Pétales de violettes glacés</p>
+                    <p class="dish-item__description">Et purée de noisettes</p>
+                </div>
+                <span class="dish-item__price">18€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Fondant au chocolat</p>
+                    <p class="dish-item__description">Revisitée</p>
+                </div>
+                <span class="dish-item__price">22€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+            <li class="dish-item">
+                <div class="dish-item__info">
+                    <p class="dish-item__name">Millefeuille croustillant</p>
+                    <p class="dish-item__description">Myrtilles et pâte d’amande</p>
+                </div>
+                <span class="dish-item__price">23€</span>
+                <span class="dish-item__check"><i class="fa-solid fa-check"></i></span>
+            </li>
+        </ul>
+    </div>
+
+    <button class="btn-primary">Commander</button>
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <p class="footer__logo">ohmyfood</p>
+        <ul class="footer__list">
+            <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+        </ul>
+</footer>
+
+</body>
+</html>
