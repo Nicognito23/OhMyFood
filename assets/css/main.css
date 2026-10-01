@@ -454,7 +454,9 @@ h1, h2, h3 {
     padding: 50px 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+    row-gap: 14px;
   }
 }
 
