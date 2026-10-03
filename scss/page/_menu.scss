@@ -76,9 +76,11 @@
   animation: fade-in-up 0.8s ease forwards;
 }
 
-.dish-item:nth-child(1) { animation-delay: 0.2s; }
-.dish-item:nth-child(2) { animation-delay: 0.5s; }
-.dish-item:nth-child(3) { animation-delay: 0.8s; }
+@for $i from 1 through 10 {
+  .dish-item:nth-child(#{$i}) {
+    animation-delay: 0.2s + ($i - 1) * 0.3s;
+  }
+}
 
 .dish-item__info {
   min-width: 0;
