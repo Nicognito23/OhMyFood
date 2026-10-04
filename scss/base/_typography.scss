@@ -15,10 +15,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-text;
   font-weight: 400;
 }
 
 h1, h2, h3 {
-  font-family: 'Shrikhand', cursive;
+  font-family: $font-title;
 }
